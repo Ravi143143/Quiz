@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+    <div class="bg-container">
+        <button onclick="visible()" class="start-quiz-button" id="btn">START QUIZ</button>
+        <div class="a" id="d1">
+            <h1 class="h1">1)what is first color of nation flag?<sup class="c">Time-Left::<span id="w1"></span></sup></h1>
+            <ul class="l1">
+                <li>
+                    <input type="radio" name="question1" id="a1" value="green" onclick="p1(event)" />
+                    <label for="a1" class="i1" id="o1">green</label>
+                </li>
+                <li>
+                    <input type="radio" name="question1" id="a2" value="blue" onclick="p1(event)" />
+                    <label class="i1" for="a2" id="o2">blue</label>
+                </li>
+                <li>
+                    <input type="radio" name="question1" id="a3" value="saffron" onclick="p1(event)" />
+                    <label class="i1" for="a3" id="o3">saffron</label>
+                </li>
+            </ul>
+            <div class="submit-container">
+                <button onclick="visible1(event)" class="submit-button">submit</button>
+            </div>
+        </div>
+
+        <div class="a" id="d2">
+            <h1 class="h1">2)what is second color of nation flag?<sup class="c">Time-Left::<span id="w2"></span></sup></h1>
+            <ul class="l1">
+                <li>
+                    <input type="radio" name="question1" id="b1" value="green" onclick="t1(event)" />
+                    <label class="i1" for="b1" id="g1">green</label>
+                </li>
+                <li>
+                    <input type="radio" name="question1" id="b2" value="white" onclick="t1(event)" />
+                    <label class="i1" for="b2" id="g2">white</label>
+                </li>
+                <li>
+                    <input type="radio" name="question1" id="b3" value="saffron" onclick="t1(event)" />
+                    <label class="i1" for="b3" id="g3">saffron</label>
+                </li>
+            </ul>
+            <div class="submit-container">
+                <button onclick="visible2(event)" class="submit-button">submit</button>
+            </div>
+        </div>
+
+        <div class="a" id="d3">
+            <h1 class="h1">3)what is third color of nation flag?<sup class="c">Time-Left::<span id="w3"></span></sup></h1>
+            <ul class="l1">
+                <li>
+                    <input type="radio" name="question1" id="c1" value="green" onclick="r1(event)" />
+                    <label class="i1" for="c1" id="h1">green</label>
+                </li>
+                <li>
+                    <input type="radio" name="question1" id="c2" value="blue" onclick="t1(event)" />
+                    <label class="i1" for="c2" id="h2">blue</label>
+                </li>
+                <li>
+                    <input type="radio" name="question1" id="c3" value="saffron" onclick="t1(event)" />
+                    <label class="i1" for="c3" id="h3">saffron</label>
+                </li>
+            </ul>
+            <div class="submit-container">
+                <button onclick="visible3(event)" class="submit-button">submit</button>
+            </div>
+        </div>
+        <div>
+            <h1 class="score-element a" id="score">your score is:</h1>
+            <button class="start-quiz-button a" onclick="play()" id="res">RESTART QUIZ</button>
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
